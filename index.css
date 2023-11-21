@@ -21,7 +21,7 @@ body,
 ul,
 h1,
 h2,
-h3 {
+h3, h4 {
     padding: 0;
     margin: 0;
 }
@@ -80,27 +80,21 @@ header .logo {
 
 
 .conteudo-sobre {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: 1 / -1;
-    padding: 4rem 0;
+
 }
 
 .sobre {
     max-width: 55ch;
 }
 
-.experiencia,
-.formacao {
+.experiencia{
     color: var(--c3);
     text-transform: uppercase;
     word-break: break-all;
     font-size: 6rem;
-    padding: 0 5rem;
-    grid-row: 1 / -4;
     max-width: 80%;
-
 }
+
 
 .informacoes-item {
     display: grid;
@@ -121,6 +115,13 @@ header .logo {
     margin-right: .5rem;
 }
 
+.formacao{
+    text-transform: uppercase;
+    word-break: break-all;
+    font-size: 6rem;
+    max-width: 80%;
+}
+
 .formacao h2 {
     color: #000;
 }
@@ -129,7 +130,7 @@ header .logo {
     background-color: var(--c13);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 4rem;
+    padding: 1rem 10rem;
     gap: 4rem;
 }
 
@@ -151,4 +152,11 @@ header .logo {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
+}
+
+.formacao-card-item p{
+    margin: 0;
+}
+.formacao-card-item h4{
+    margin: .5rem 0 2rem;
 }
