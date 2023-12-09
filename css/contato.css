@@ -1,21 +1,22 @@
-
-
-.contato{
+.footer{
     background-color: #000;
     display: grid;
     justify-items: center;
 }
 
-.conteudo-contato{
+.contato-conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    align-items: center;
-    gap: 5rem;
     max-width: 80vw;
-    padding: 5rem 0;
+    align-items: center;
+    gap: 2rem;
+    margin: auto;
+    padding: 2rem 0;
     color: var(--c6);
     position: relative;
+    justify-items: center;
+
+
 }
 
 
@@ -30,6 +31,11 @@
 }
 
 
+.contato-texto{
+    max-width: 50ch;
+}
+
+
 .info-contato{
     color: var(--branco);
     font-size: 2rem;
@@ -37,13 +43,25 @@
     margin: 1rem 0;
 }
 
-footer{
+.direitos{
     background-color: #000;
     max-width: 80vw;
     text-align: left;
     align-items: center;
-    padding: 5rem 8rem;
+    padding: 5rem 7rem;
     color: var(--c6);
     justify-self: start;
+    grid-column: 1/-1;
 
+}
+
+@media (max-width:800px) {
+    .contato-conteudo{
+        grid-template-columns: 1fr;
+    }
+
+    .direitos{
+        max-width: initial;
+        padding: 2rem;
+    }
 }

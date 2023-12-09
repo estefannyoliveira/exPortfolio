@@ -21,6 +21,11 @@
     color: #525252;
 }
 
+.experiencia-texto strong{
+    color: #141414;
+
+}
+
 
 .empresa {
     display: grid;

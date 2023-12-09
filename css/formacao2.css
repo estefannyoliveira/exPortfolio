@@ -1,0 +1,164 @@
+.formacao {
+    background-color: var(--c13);
+}
+
+.formacao-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    max-width: 80vw;
+    padding: 5rem 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.formacao-container::after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url("../img/detalhe-titulo.svg") no-repeat center;
+    position: absolute;
+    bottom: -50px;
+}
+
+.formacao .subtitulo{
+    color: #000;
+    max-width: 5ch;
+}
+.formacao-texto {
+    color: var(--c6);
+    font-size: 1.5rem;
+    line-height: 1.3;
+    max-width: 45ch;
+    margin: 4rem 0;
+}
+
+.formacao-texto strong{
+    color: #fff;
+}
+
+.faculdade-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.faculdade {
+    background-color: #090909;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 30px;
+}
+
+.faculdade-tipo{
+    font-size: .85rem;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+    color: #a3a3a3
+}
+
+.faculdade-curso{
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    position: relative;
+    flex: 1;
+}
+
+.faculdade-curso::before {
+    content: "";
+    display: block;
+    width: .3rem;
+    height: 1.2rem;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    left: -1.3rem;
+}
+
+.faculdade-instituicao{
+    font-size: 1.2rem;
+    color: #a3a3a3
+
+}
+
+
+.formacao-extra{
+    margin-bottom: 3rem;
+}
+.cursos{
+    margin-bottom: 3rem;
+}
+
+.formacao-extra h3{
+    font-size: .9rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+
+}
+
+.formacao-extra h3::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 20px;
+    left: -30px;
+}
+
+.cursos h3::before{
+    background: url("../img/livro.svg");
+}
+
+.idiomas h3::before{
+    background: url("../img/idiomas.svg");
+
+}
+
+.titulo-extra{
+    color: #fff;
+    justify-items: end;
+    margin: .5rem 0;
+}
+
+.titulo-extra span{
+    color: #8f8f8f;
+}
+
+.cursos li{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width:800px){
+    .formacao-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 3rem 0;
+    }
+
+    .formacao-container::after{
+        display: none;
+    }
+
+    .formacao .subtitulo{
+        color: #fff;
+    }
+    .formacao-texto{
+        font-size: 1.2rem;
+        margin: 2rem 0;
+    }
+}
+
